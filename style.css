@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+#page-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width:80%;
+}
+html{
+    background-image: url("images/bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 100%;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem 4rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    margin-top: 3rem;
+}
+
+main,header{
+    width: 100%;
+}
+
+footer{
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+}
+
+.icons{
+    margin-left: auto;
+}
+
+.attribution {
+    font-size: 0.9rem;
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing: 1px;
+  }
+
+  .attribution a {
+    color: hsl(308, 100%, 50%);
+    font-size: 1rem;
+  }
+
+  i{  font-size: medium;
+      border: 2px solid white;
+      padding: 8px 10px;
+      border-radius: 50%;
+      margin: 0 0.5rem;
+      color:white;
+  }
+
+  .content>h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 3.5rem;
+    width: 60%;
+  }
+
+  .content>p{
+      line-height: 1.5rem;
+      padding-bottom: 1rem;
+      font-weight: 400;
+      width:67%;
+      height: auto;
+  }
+
+  .content{
+    margin:0 2rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    margin-top: -10%;
+  }
+
+.container>img{
+    width: 50%;
+}
+
+  button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color:hsl(257, 40%, 49%);
+    font-weight: 400;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.4);
+    letter-spacing: 1px;
+  }
+
+  i:hover{
+      color: hsl(300, 69%, 71%);
+      border-color: hsl(300, 69%, 71%);
+  }
+
+  button:hover{
+      color: white;
+      background-color: hsl(300, 69%, 71%);
+  }
+
+  .logo{
+      height: 45px;
+      margin-top: 0.2rem;
+  }
+  header{
+      margin: 1rem 0;
+  }
+  @media only screen and (max-width: 768px) {
+    
+    .container>*{
+        margin:0;
+        padding: 0;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center ;
+    }
+    p{  margin: 0;
+        padding: 0;
+        width: 100%;
+        
+    }
+    .content{
+        /* margin-top: 30%; */
+       width: 80%;
+       text-align: center;
+    }
+   .content>h1{
+        margin-top: 20%;
+        padding: 0;
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+
+    .content>p{
+        width: 100%;
+    }
+    html{
+        background: none;
+    }
+    body{
+        padding:2rem 0;
+        background-image: url("images/bg-mobile.svg");
+        background-position: top center;
+        overflow-x: hidden;
+        overflow: visible;
+        background-repeat: no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        background-size: 100%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .icons{
+        order: -1;
+        margin: 0;
+        margin-bottom:4%;
+        padding: 0;
+    }
+    .icons>a>i{
+        font-size: small;
+        border: 1px solid white;
+        padding: 6px 8px;
+    }
+    .attribution{
+        font-size: 0.8rem;
+    }
+    .attribution a{
+        font-size: 0.9rem;
+    }
+    .container >img{
+        width: 80%;
+    }
+    .content>button{
+        align-self: center;
+    }
+    header{
+        width: 80%;
+        margin: 3% 0;
+    }
+    #page-body{
+        width: inherit;
+        margin-top: 4rem;
+    }
+       
+}
