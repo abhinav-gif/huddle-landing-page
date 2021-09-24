@@ -51,4 +51,4 @@ Learned about using icons and building Two component layouts
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@abhinav-gif](https://www.frontendmentor.io/profile/abhinav-gif)
